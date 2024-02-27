@@ -1,15 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+// Images
+import logo from '../../src/assets/img/logo.png'
+import mangoCrema from '../assets/img/MangoCrema.png'
+import churroLoco from '../assets/img/churroLoco.png'
+
 import MainButton from '../components/MainButton.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Snacks Las Girasoles">
 	<main>
 		<header class="bg-alabaster flex justify-evenly mt-10 p-4"> 
 			<MainButton text={"Menu digital"}/>
 			<MainButton text={"Contactanos"}/>
 		</header>
+		<div class="mx-4">
+			<img class="mx-auto"  src={logo.src} alt="">
+		</div>
+		<div class="relative overflow-hidden">
+			<img class="relative right-40 -bottom-10" src={mangoCrema.src} alt="">
+			<img class="absolute left-2/4 bottom-0 " src={churroLoco.src} alt="">
+		</div>
 	</main>
 </Layout>
 
