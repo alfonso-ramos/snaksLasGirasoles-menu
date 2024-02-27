@@ -1,6 +1,17 @@
 ---
+import SnackCard from '../components/SnackCard.astro'
+
+import {snacks} from '../data/menu.js'
 
 ---
 <div>
-    <h1 class="text-2xl">Homa menu</h1>
+    {
+        snacks.map(snack => 
+            <SnackCard 
+                titulo={snack.title} 
+                descripcion={snack.descripcion} 
+                precio={snack.precio}
+                img={snack.img}
+            />)
+    }
 </div>

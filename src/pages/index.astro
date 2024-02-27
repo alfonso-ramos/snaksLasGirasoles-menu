@@ -6,14 +6,17 @@ import logo from '../../src/assets/img/logo.png'
 import mangoCrema from '../assets/img/MangoCrema.png'
 import churroLoco from '../assets/img/churroLoco.png'
 
-import MainButton from '../components/MainButton.astro'
 ---
 
 <Layout title="Snacks Las Girasoles">
 	<main>
 		<header class="bg-alabaster flex justify-evenly mt-10 p-4"> 
-			<MainButton text={"Menu digital"}/>
-			<MainButton text={"Contactanos"}/>
+			<div class="bg-primary font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
+				<a href="">Menu digital</a>
+			</div>
+			<div class="bg-primary font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
+				<a href="">Contactanos</a>
+			</div>
 		</header>
 		<div class="mx-4">
 			<img class="mx-auto"  src={logo.src} alt="">
