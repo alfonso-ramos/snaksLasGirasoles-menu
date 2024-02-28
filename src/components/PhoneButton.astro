@@ -3,18 +3,19 @@ import phoneLogo from '../assets/icons/phone.svg'
 ---
 <div class="bg-zafre text-white font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl flex">
     <img class="size-5" src={phoneLogo.src} alt="">
-    <button id="copyButton"></button>
+    <button id="copyButton">6692639645</button>
 </div>
 
 <script>
     const copyBtn = document.querySelector('#copyButton')
-    copyBtn.addEventListener("click", () => {
-        const el = document.createElement('textarea');
-        el.value = '6666445533';
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
-        alert("Copiado", el.value)
+    
+    copyBtn.addEventListener('click', () => {
+        if(navigator.clipboard) {
+            navigator.clipboard.writeText('6692639645').then(() => {
+                alert('Se ha copiado')
+            })
+        } else {
+            console.log('Navegador no compatible')
+        }
     })
 </script>

@@ -1,12 +1,13 @@
 ---
+import mangoFoto from '../assets/img/MangoCrema.png'
 const {titulo, descripcion, precio, img} = Astro.props
 ---
 
-<div>
-    <div>
-        <p>{descripcion}</p>
+<div class="w-[358px] h-20 flex justify-between gap-4 rounded-lg border-solid border-zafre border-2 my-7 mx-auto p-4">
+    <div class="">
+        <h3 class="text-base font-semibold">{titulo}</h3>
+        <!-- <p>{descripcion}</p> -->
         <p>$ {precio}</p>
     </div>
-    <h3>{titulo}</h3>
-    <!-- <img src={img} alt=""> -->
+    <img class="w-24 h-[56px]" src={mangoFoto.src} alt="">
 </div>

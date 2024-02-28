@@ -61,8 +61,196 @@ export const snacks = [
         categoria: 'elote',
     },
     //TODO Agridulce
+    {
+        titulo: 'Cueritos',
+        descripcion: 'Cueritos preparados con tomate, cebolla y pepino, sal y pimienta',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Giracrazy',
+        descripcion: 'Charola con una sabrita entera, zanahoria rayada, cueritos, salchicha, pepino, jicama, cacahuates, rielitos y una variedad de gomitas',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Cacahuatada',
+        descripcion: 'Vaso con cacahuates, cueritos, pepino, jicama, rielitos, kermato y salsa agridulce',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Takisloco',
+        descripcion: 'Takis preparado con ceviche, pepino, jicama, cacahuates, rielitos y gomitas',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Manzana',
+        descripcion: 'Manzana enchilada preparada con pepino, jicama, cacahuates, rielitos, gomitas y salsa agridulce',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Churroloco',
+        descripcion: 'Vaso com churros de maiz, cacahuates, salchichas, pepino, jicama, rielitos, kermaot, gomitas y salsa agridulce',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Papas preparadas',
+        descripcion: 'Papas con ceviche, cueritos, pepino, jicama, cacahuates, rielitos, kermato y salsa agridulce',
+        precio: 30,
+        categoria: 'agridulce',
+    },
+    {
+        titulo: 'Gomitas preparadas',
+        descripcion: 'Gomitas preparadas con chamoy casero de ciruela y salsa agridulce',
+        precio: 30,
+        categoria: 'agridulce',
+    },
     //TODO tostitos
+    {
+        titulo: 'Tostielote',
+        descripcion: 'Tostitos con elote desgranado, queso amarillo, queso y crema o mayones',
+        precio: 30,
+        categoria: 'tostitos',
+    },
+    {
+        titulo: 'Tostiloco',
+        descripcion: 'Tostitos con ceviche de sierra, cueritos, pepino, jicama, cacahuate, rielitos y kermato',
+        precio: 30,
+        categoria: 'tostitos',
+    },
+    {
+        titulo: 'Tosticamaron',
+        descripcion: 'Tostitos con ceviche de camaron, cueritos, jicama, cacahuates, rielitos y kermato',
+        precio: 30,
+        categoria: 'tostitos',
+    },
+    {
+        titulo: 'Tosticueritos',
+        descripcion: 'Tostitos con cueritos, tomate, pepino, cebolla, cacahuates, rielitos y kermato',
+        precio: 30,
+        categoria: 'tostitos',
+    },
     //TODO Helado
+    {
+        titulo: 'Raspados',
+        //TODO aagregar descripciones
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Frappé',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Bolis de agua',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Bolis de leche',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Fresas con crema',
+        //TODO aagregar descripciones
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Mango con crema',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Freman',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Chamoyada',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Paragüitas ',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Mangoneadas',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Chocobanana ',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
+    {
+        titulo: 'Chocofresa',
+        descripcion: '',
+        precio: 30,
+        categoria: 'helado',
+    },
     //TODO Caliente
+    {
+        titulo: 'HotCakes',
+        descripcion: '',
+        precio: 30,
+        categoria: 'caliente',
+    },
+    {
+        titulo: 'Platano frito ',
+        descripcion: '',
+        precio: 30,
+        categoria: 'caliente',
+    },
+    {
+        titulo: 'Mini donas',
+        descripcion: '',
+        precio: 30,
+        categoria: 'caliente',
+    },
     //TODO Bebidas
+    {
+        titulo: 'Refrescos de 600ml',
+        descripcion: '',
+        precio: 30,
+        categoria: 'bebidas',
+    },
+    {
+        titulo: 'Agua natural',
+        descripcion: '',
+        precio: 30,
+        categoria: 'bebidas',
+    },
+    {
+        titulo: 'Agua de sabor',
+        descripcion: '',
+        precio: 30,
+        categoria: 'bebidas',
+    },
+    {
+        titulo: 'Cocohorchata',
+        descripcion: '',
+        precio: 30,
+        categoria: 'bebidas',
+    },
 ]
