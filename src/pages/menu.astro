@@ -1,17 +1,21 @@
 ---
+import MenuLayout from '../layouts/MenuLayout.astro'
+
 import SnackCard from '../components/SnackCard.astro'
 
 import {snacks} from '../data/menu.js'
 
 ---
-<div>
-    {
-        snacks.map(snack => 
-            <SnackCard 
-                titulo={snack.titulo} 
-                descripcion={snack.descripcion} 
-                precio={snack.precio}
-                img={snack.img}
-            />)
-    }
-</div>
+<MenuLayout title='Menu'>
+    <div>
+        {
+            snacks.map(snack => 
+                <SnackCard 
+                    titulo={snack.titulo} 
+                    descripcion={snack.descripcion} 
+                    precio={snack.precio}
+                    img={snack.img}
+                />)
+        }
+    </div>
+</MenuLayout>

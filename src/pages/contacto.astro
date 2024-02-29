@@ -1,0 +1,29 @@
+---
+import ContactLayout from '../layouts/ContactLayout.astro'
+
+import Phonebutton from '../components/PhoneButton.astro'
+import WhatsAppBtn from '../components/WhatsAppBtn.astro'
+
+import logo from '../assets/img/logo.png'
+---
+<ContactLayout title='Contactanos'>
+    <div class="bg-[#FCFAF7]">
+        <header class="bg-zafre flex justify-evenly mt-10 p-4"> 
+            <div class="bg-primary font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
+                <a href="/menu/">Menu digital</a>
+            </div>
+        </header>
+        <div>
+            <img class="my-6 mx-auto size-[229px]" src={logo.src} alt="">
+            <h1 class="text-2xl font-semibold text-center mx-10">¡No te quedes con el anotojo!</h1>
+            <p class="text-base font-semibold text-center">Visitanos en:  Girasoles 4722, Ricardo Flores Magón, 82190 Mazatlán, Sin.</p>
+    
+            <p class="text-base font-semibold text-center">Tambien nos puedes contactar por telefono o Whatsapp</p>
+    
+            <div class="flex flex-col items-center gap-6 my-6">
+                <Phonebutton />
+                <WhatsAppBtn />
+            </div>
+        </div>
+    </div>
+</ContactLayout>
