@@ -1,9 +1,14 @@
 ---
-import mangoFoto from '../assets/img/MangoCrema.png'
-const {titulo, descripcion, precio, img} = Astro.props
+    import mangoFoto from '../assets/img/MangoCrema.png'
+    const {titulo, descripcion, precio, img, id} = Astro.props
+
+    // const snackCard = document.querySelector('#snackCard')
+    // snackCard.addEventListener('click', (id ) => {
+
+    // })
 ---
 
-<div class="w-[358px] h-20 flex justify-between gap-4 rounded-lg border-solid border-zafre border-2 my-7 mx-auto p-4">
+<div id="snackCard" class="w-[358px] h-20 flex justify-between gap-4 rounded-lg border-solid border-zafre border-2 my-7 mx-auto p-4" >
     <div class="">
         <h3 class="text-base font-semibold">{titulo}</h3>
         <!-- <p>{descripcion}</p> -->
@@ -11,3 +16,10 @@ const {titulo, descripcion, precio, img} = Astro.props
     </div>
     <img class="w-24 h-[56px]" src={mangoFoto.src} alt="">
 </div>
+
+<!-- <script>
+        const snackCard = document.querySelector('#snackCard')
+        snackCard.addEventListener('click', ( id ) => {
+            window.location.href = 'snack?id=1'
+        })
+</script> -->

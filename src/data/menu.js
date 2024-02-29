@@ -1,5 +1,6 @@
 export const snacks = [
     {
+        id: 1,
         titulo: 'Elote entero',
         descripcion: 'Elote en palo natural con queso y crema o mayonesa',
         precio: 30,
