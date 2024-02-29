@@ -9,21 +9,21 @@ import churroLoco from '../assets/img/churroLoco.png'
 ---
 
 <Layout title="Snacks Las Girasoles">
-	<main>
-		<header class="bg-alabaster flex justify-evenly mt-10 p-4"> 
+	<main class="">
+		<header class="bg-alabaster flex justify-evenly p-4 mt-10"> 
 			<div class="bg-primary font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
-				<a href="menu.astro">Menu digital</a>
+				<a href="/menu/">Menu digital</a>
 			</div>
-			<div class="bg-primary font-semibold text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
+			<div class="bg-zafre font-semibold text-white text-center min-w-[157px] max-w-10 py-3 px-6 rounded-xl">
 				<a href="/contact/">Contactanos</a>
 			</div>
 		</header>
-		<div class="mx-4">
+		<div class="mx-4 mt-10 md:mt-20">
 			<img class="mx-auto"  src={logo.src} alt="">
 		</div>
 		<div class="relative overflow-hidden">
-			<img class="relative right-40 -bottom-10" src={mangoCrema.src} alt="">
-			<img class="absolute left-2/4 bottom-0 " src={churroLoco.src} alt="">
+			<img class="relative right-40 -bottom-10 xl:h-[600px]" src={mangoCrema.src} alt="">
+			<img class="absolute left-2/4 bottom-0 xl:left-3/4 xl:h-[600px]" src={churroLoco.src} alt="">
 		</div>
 	</main>
 </Layout>
