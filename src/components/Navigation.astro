@@ -1,0 +1,29 @@
+---
+import { snacks } from "../data/menu";
+
+const categoriaUnica = []
+
+snacks.forEach(snack => {
+    if(!categoriaUnica.includes(snack.categoria)){
+        categoriaUnica.push(snack.categoria)
+    }
+})
+
+---
+
+<nav>
+  <div class="flex overflow-scroll gap-2">
+    {
+      categoriaUnica.map(categoria => 
+        <a 
+        class="w-[83.5px] h-[53px] text-base font-semibold py-3 px-5"
+        >
+          {categoria}
+        </a>
+        
+      )
+    }
+    <!-- <li class="w-[83.5px] h-[53px] text-base font-semibold py-3 px-5">{categoriaUnica.map(categoria => categoria)}</li> -->
+  </div>
+</nav>
+

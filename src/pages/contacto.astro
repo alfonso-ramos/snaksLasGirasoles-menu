@@ -4,7 +4,7 @@ import ContactLayout from '../layouts/ContactLayout.astro'
 import Phonebutton from '../components/PhoneButton.astro'
 import WhatsAppBtn from '../components/WhatsAppBtn.astro'
 
-import logo from '../assets/img/logo.png'
+import logo from '/src/assets/img/logo.webp'
 ---
 <ContactLayout title='Contactanos'>
     <div class="bg-[#FCFAF7]">
@@ -20,7 +20,7 @@ import logo from '../assets/img/logo.png'
     
             <p class="text-base font-semibold text-center">Tambien nos puedes contactar por telefono o Whatsapp</p>
     
-            <div class="flex flex-col items-center gap-6 my-6">
+            <div class="flex flex-col items-center gap-6 my-6 md:flex-row md:justify-center">
                 <Phonebutton />
                 <WhatsAppBtn />
             </div>

@@ -2,11 +2,15 @@
 import MenuLayout from '../layouts/MenuLayout.astro'
 
 import SnackCard from '../components/SnackCard.astro'
+import Navigation from '../components/Navigation.astro'
 
 import {snacks} from '../data/menu.js'
 
+import logo from '../assets/img/logo.png'
 ---
 <MenuLayout title='Menu'>
+
+    <Navigation />
     <div>
         {
             snacks.map(snack => 
