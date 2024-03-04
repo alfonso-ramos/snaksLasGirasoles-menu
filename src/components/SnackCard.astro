@@ -1,4 +1,5 @@
 ---
+    import Image from 'astro/components/Image.astro' 
     import mangoFoto from '../assets/img/MangoCrema.png'
     const {titulo, descripcion, precio, img, id} = Astro.props
 
@@ -8,11 +9,11 @@
     // })
 ---
 
-<div id="snackCard" class="w-[358px] h-20 flex justify-between gap-4 rounded-lg border-solid border-zafre border-2 my-7 mx-auto p-4" >
+<div id="snackCard" class="w-[358px] h-20 flex justify-between gap-4 rounded-lg  my-3 mx-auto p-4 shadow-md" >
     <div class="">
-        <h3 class="text-base font-semibold">{titulo}</h3>
+        <h3 class="text-base font-semibold text-[#1C1A0D]">{titulo}</h3>
         <!-- <p>{descripcion}</p> -->
-        <p>$ {precio}</p>
+        <p class="text-[#9C8F4A]">$ {precio}</p>
     </div>
     <img class="w-24 h-[56px]" src={img} alt="">
 </div>

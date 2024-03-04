@@ -5,15 +5,50 @@ import SnackCard from '../components/SnackCard.astro'
 import Navigation from '../components/Navigation.astro'
 
 import {snacks} from '../data/menu.js'
+import { snacksFilter } from '../utils/FilterCategory.js'
 
 import logo from '../assets/img/logo.png'
+
+
+
+const categoriaUnica = []
+
+snacks.forEach(snack => {
+    if(!categoriaUnica.includes(snack.categoria)){
+        categoriaUnica.push(snack.categoria)
+    }
+})
+// console.log(snacksFilter)
 ---
 <MenuLayout title='Menu'>
 
-    <Navigation />
-    <div>
+    <!-- <Navigation /> -->
+    <nav>
+        <ul class="flex overflow-scroll gap-2 cursor-pointer">
+
+                <li 
+                    id="allCategory"
+                    class="w-[83.5px] h-[53px] text-base font-semibold py-3 px-5"
+                
+                >
+                    Todos
+                </li>
+            {
+                categoriaUnica.map(categoria => 
+                <li
+                    id="selectedCategory"
+                    class="w-[83.5px] h-[53px] text-base font-semibold py-3 px-5 selectedCategory"
+                >
+                    {categoria}
+                </li>
+                )
+            }
+
+        </ul>
+    </nav>
+    <div class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3">
         {
-            snacks.map(snack => 
+            snacksFilter.map(snack => 
                 <SnackCard 
                     titulo={snack.titulo} 
                     descripcion={snack.descripcion} 
@@ -23,3 +58,23 @@ import logo from '../assets/img/logo.png'
         }
     </div>
 </MenuLayout>
+
+<script>
+    import {snacksFilter,filterCategory} from '../utils/FilterCategory'
+
+    filterCategory(null)
+    const allCategoryBtn = document.querySelector('#allCategory')
+        allCategoryBtn.addEventListener('click', () => {
+            filterCategory(null)
+    })
+
+    const selectedCategoryBtn = document.getElementById('selectedCategory')
+    selectedCategoryBtn.addEventListener('click', () => {
+        const selectedCategory = selectedCategoryBtn.textContent
+        
+        filterCategory(selectedCategory)
+        console.log(selectedCategory)
+    })
+
+
+</script>

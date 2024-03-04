@@ -5,31 +5,36 @@ export const snacks = [
         descripcion: 'Elote en palo natural con queso y crema o mayonesa',
         precio: 30,
         categoria: 'Elote',
-        img: '/src/assets/img/churroLoco.png'
+        img: '/src/assets/img/entero.webp'
     },
     {
         titulo: 'Elote en vaso',
         descripcion: 'Elote desgranado en vaso',
         precio: 25,
         categoria: 'Elote',
+        img: '/src/assets/img/eloteVaso.webp'
     },
     {
         titulo: 'Mixto',
         descripcion: 'Charola con elote entero, sabritas al rededor y elote drafranado encima',
         precio: 105,
         categoria: 'Elote',
+        img: '/src/assets/img/eloteMixto.webp'
+
     },
     {
         titulo: 'DuoMix',
         descripcion: 'Litro de elote desfranado y unas sabritas enteras con elote partido en dos por encima ',
         precio: 105,
         categoria: 'Elote',
+        img: '/src/assets/img/Duomiox.webp'
     },
     {
         titulo: 'Envuelto',
         descripcion: 'Elote entero con queso y crema o mayonesa, envuelto con sabritas molidas de su eleccion',
         precio: 60,
         categoria: 'Elote',
+        img: '/src/assets/img/envuelto.webp'
     },
     {
         titulo: 'Envuelto especial',
@@ -42,42 +47,49 @@ export const snacks = [
         descripcion: 'Plato de elote desgranado con sabritas enteras, al centro un medio litro con dos mitades de elote entero clavados con queso, crema y queso amarillo',
         precio: 120,
         categoria: 'Elote',
+        img: '/src/assets/img/eloteErupcion.webp'
     },
     {
         titulo: 'Elección',
         descripcion: 'Medio litro de elote desgranado con una sabrita molida, queso, crema o mayonesa y queso amarillo',
         precio: 70,
         categoria: 'Elote',
+        img: '/src/assets/img/eleccionNormal.webp'
     },
     {
         titulo: 'Eleccion especial',
         descripcion: 'Charola de elote con una elección normal en el medio, al rededor una sabrita entera con elote desgranado',
         precio: 105,
         categoria: 'Elote',
+        img: '/src/assets/img/eleccionEspecial.webp'
     },
     {
         titulo: 'Esquisopa',
         descripcion: 'Charola con una maruchan preparado con elote desgranado y una sabrita enteras',
         precio: 105,
         categoria: 'Elote',
+        img: '/src/assets/img/esquisopa.webp'
     },
     {
         titulo: 'Cueritos',
         descripcion: 'Cueritos preparados con tomate, cebolla y pepino, sal y pimienta',
         precio: 45,
         categoria: 'Agridulce',
+        img: '/src/assets/img/CueritosPreparados.webp'
     },
     {
         titulo: 'Giracrazy',
         descripcion: 'Charola con una sabrita entera, zanahoria rayada, cueritos, salchicha, pepino, jicama, cacahuates, rielitos y una variedad de gomitas',
         precio: 105,
         categoria: 'Agridulce',
+        img: '/src/assets/img/giracrazy.webp'
     },
     {
         titulo: 'Cacahuatada',
         descripcion: 'Vaso con cacahuates, cueritos, pepino, jicama, rielitos, kermato y salsa agridulce',
         precio: 40,
         categoria: 'Agridulce',
+        img: '/src/assets/img/cacahuatada.webp'
     },
     {
         titulo: 'Takisloco',
@@ -114,24 +126,28 @@ export const snacks = [
         descripcion: 'Tostitos con elote desgranado, queso amarillo, queso y crema o mayones',
         precio: 65,
         categoria: 'Tostitos',
+        img: '/src/assets/img/Tostielote.webp'
     },
     {
         titulo: 'Tostiloco',
         descripcion: 'Tostitos con ceviche de sierra, cueritos, pepino, jicama, cacahuate, rielitos y kermato',
         precio: 65,
         categoria: 'Tostitos',
+        img: '/src/assets/img/tostiloco.webp'
     },
     {
         titulo: 'Tosticamaron',
         descripcion: 'Tostitos con ceviche de camaron, cueritos, jicama, cacahuates, rielitos y kermato',
         precio: 70,
         categoria: 'Tostitos',
+        img: '/src/assets/img/tostiCamaron.webp'
     },
     {
         titulo: 'Tosticueritos',
         descripcion: 'Tostitos con cueritos, tomate, pepino, cebolla, cacahuates, rielitos y kermato',
         precio: 65,
         categoria: 'Tostitos',
+        img: '/src/assets/img/'
     },
     {
         titulo: 'Tostiloco Mixto',
