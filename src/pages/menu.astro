@@ -5,7 +5,7 @@ import SnackCard from '../components/SnackCard.astro'
 import Navigation from '../components/Navigation.astro'
 
 import {snacks} from '../data/menu.js'
-import { snacksFilter } from '../utils/FilterCategory.js'
+import { filterCategory, snacksFilter } from '../utils/FilterCategory.js'
 
 import logo from '../assets/img/logo.png'
 
@@ -18,6 +18,7 @@ snacks.forEach(snack => {
         categoriaUnica.push(snack.categoria)
     }
 })
+// filterCategory('Elote')
 // console.log(snacksFilter)
 ---
 <MenuLayout title='Menu'>
@@ -36,7 +37,6 @@ snacks.forEach(snack => {
             {
                 categoriaUnica.map(categoria => 
                 <li
-                    id="selectedCategory"
                     class="w-[83.5px] h-[53px] text-base font-semibold py-3 px-5 selectedCategory"
                 >
                     {categoria}
@@ -62,18 +62,19 @@ snacks.forEach(snack => {
 <script>
     import {snacksFilter,filterCategory} from '../utils/FilterCategory'
 
-    filterCategory(null)
     const allCategoryBtn = document.querySelector('#allCategory')
         allCategoryBtn.addEventListener('click', () => {
             filterCategory(null)
+            console.log(snacksFilter)
     })
 
-    const selectedCategoryBtn = document.getElementById('selectedCategory')
-    selectedCategoryBtn.addEventListener('click', () => {
-        const selectedCategory = selectedCategoryBtn.textContent
-        
-        filterCategory(selectedCategory)
-        console.log(selectedCategory)
+    const selectedCategoryBtn = document.querySelectorAll('.selectedCategory')
+    selectedCategoryBtn.forEach(category => {
+        category.addEventListener('click', () => {
+            let categorySelected = category.textContent.trim()
+            console.log(categorySelected)
+            filterCategory(categorySelected)
+        })
     })
 
 
