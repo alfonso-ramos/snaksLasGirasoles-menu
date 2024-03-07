@@ -5,7 +5,7 @@ import SnackCard from '../components/SnackCard.astro'
 import Navigation from '../components/Navigation.astro'
 
 import {snacks} from '../data/menu.js'
-import { filterCategory, snacksFilter } from '../utils/FilterCategory.js'
+import { filterCategory } from '../utils/FilterCategory.js'
 
 import logo from '../assets/img/logo.png'
 
@@ -18,8 +18,7 @@ snacks.forEach(snack => {
         categoriaUnica.push(snack.categoria)
     }
 })
-// filterCategory('Elote')
-// console.log(snacksFilter)
+filterCategory(null)
 ---
 <MenuLayout title='Menu'>
 
@@ -46,8 +45,8 @@ snacks.forEach(snack => {
 
         </ul>
     </nav>
-    <div class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3">
-        {
+    <div id="menu" class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3">
+        <!-- {
             snacksFilter.map(snack => 
                 <SnackCard 
                     titulo={snack.titulo} 
@@ -55,26 +54,47 @@ snacks.forEach(snack => {
                     precio={snack.precio}
                     img={snack.img}
                 />)
-        }
+        } -->
     </div>
 </MenuLayout>
 
 <script>
     import {snacksFilter,filterCategory} from '../utils/FilterCategory'
+    import { snacks } from '../data/menu'
+    filterCategory(null)
 
-    const allCategoryBtn = document.querySelector('#allCategory')
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const allCategoryBtn = document.querySelector('#allCategory')
         allCategoryBtn.addEventListener('click', () => {
             filterCategory(null)
             console.log(snacksFilter)
-    })
-
-    const selectedCategoryBtn = document.querySelectorAll('.selectedCategory')
-    selectedCategoryBtn.forEach(category => {
-        category.addEventListener('click', () => {
-            let categorySelected = category.textContent.trim()
-            console.log(categorySelected)
-            filterCategory(categorySelected)
         })
+        
+        const selectedCategoryBtn = document.querySelectorAll('.selectedCategory')
+        selectedCategoryBtn.forEach(category => {
+            category.addEventListener('click', () => {
+                let categorySelected = category.textContent.trim()
+
+                console.log(categorySelected)
+                filterCategory(categorySelected)
+            })
+        })
+        
+        const menuList = document.getElementById('menu')
+        const renderMenu = () => {
+            console.warn(snacksFilter)
+            snacksFilter.map(snack => {
+                console.log(snack.titulo)
+
+            })
+            menuList.innerHTML = '<h2>All Characters</h2><ul>' +
+            snacksFilter.map(snack => `<li>${snack.titulo} </li>`).join('') +
+            '</ul>';
+        }
+        renderMenu()
+
+
     })
 
 

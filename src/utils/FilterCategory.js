@@ -5,6 +5,7 @@ export let snacksFilter = []
 export const filterCategory = (category) => {
 
     if (category === null ){
+        snacksFilter = []
         snacksFilter.push(...snacks)
         
     } else {
