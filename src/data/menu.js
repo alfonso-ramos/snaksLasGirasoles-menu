@@ -5,7 +5,7 @@ export const snacks = [
         descripcion: 'Elote en palo natural con queso y crema o mayonesa',
         precio: 30,
         categoria: 'Elote',
-        img: '../src/assets/img/entero.webp'
+        img: '../../src/assets/img/entero.webp'
     },
     { 
         id: 2,
