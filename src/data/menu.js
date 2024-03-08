@@ -5,7 +5,7 @@ export const snacks = [
         descripcion: 'Elote en palo natural con queso y crema o mayonesa',
         precio: 30,
         categoria: 'Elote',
-        img: '/src/assets/img/entero.webp'
+        img: '../src/assets/img/entero.webp'
     },
     { 
         id: 2,
@@ -123,6 +123,7 @@ export const snacks = [
         descripcion: 'Vaso com churros de maiz, cacahuates, salchichas, pepino, jicama, rielitos, kermaot, gomitas y salsa agridulce',
         precio: 50,
         categoria: 'Agridulce',
+        img: '/src/assets/img/churroLoco.webp'
     },
     { 
         id: 17,
@@ -130,6 +131,7 @@ export const snacks = [
         descripcion: 'Papas con ceviche, cueritos, pepino, jicama, cacahuates, rielitos, kermato y salsa agridulce',
         precio: 60,
         categoria: 'Agridulce',
+        img: '/src/assets/img/papasPreparadas.webp'
     },
     { 
         id: 18,
@@ -192,6 +194,7 @@ export const snacks = [
         descripcion: '',
         precio: 70,
         categoria: 'Helado',
+        img: '/src/assets/img/frappe.webp'
     },
     { 
         id: 26,
@@ -228,6 +231,7 @@ export const snacks = [
         descripcion: '',
         precio: 70,
         categoria: 'Helado',
+        img: '/src/assets/img/freman.webp'
     },
     { 
         id: 31,
@@ -359,3 +363,35 @@ export const snacks = [
         categoria: 'Postres',
     },
 ]
+
+/* imagenes faltantes: 
+    envuelto especial,
+    takisloco,
+    manzana,
+    gomitas preparadas,
+    tosticueritos,
+    tostiloco mixmo,
+    raspado,
+    bolis de agua,
+    bolis de leche,
+    fresas con crema
+    mango con crema,
+    chamoyada,
+    jamaicada,
+    paraguitas,
+    mangoneada,
+    chocobanana,
+    chocofresa,
+    hotcakes,
+    platano frito,
+    mini donas,
+    refrescos de 600ml,
+    agua natural,
+    agua de sabor,
+    cocohorchata,
+    pay de guayaba,
+    flan,
+    pastel de tres leches,
+    chocoflan,
+    cheesecake de oreo,
+*/
